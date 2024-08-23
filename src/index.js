@@ -17,11 +17,17 @@ app.use('/assets', express.static('./public/images'));
 
 const usersController = require('./users/users.controller');
 const cheannelsController = require('./channels/channels.controller');
+const categoriesController = require('./categories/categories.controller');
+// const tagsController = require()
 
 
 app.use('/api/users', upload.none(), usersController);
 
+app.use('/api/categories', upload.none(), categoriesController);
+
 app.use('/api/channels', upload.single('image'), cheannelsController);
+
+
 
 app.listen(PORT, () =>{
     console.log("express API runningin port: " + PORT);

@@ -1,5 +1,5 @@
 const express = require('express')
-const { getall, getbyid, create } = require('./channels.service');
+const { getall, getbyid, create, update } = require('./channels.service');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
@@ -38,9 +38,10 @@ router.post('/:id', async (req,res) => {
     const{file}= req;
     const image = file.filename;
     try {
+        const id = req.params.id
         const channelsdata = req.body;
         channelsdata.image = image;
-        const ch = await create(channelsdata);
+        const ch = await update(id, channelsdata);
         res.send(ch);
     } catch (error) {
         res.status(400).send(error.message)
