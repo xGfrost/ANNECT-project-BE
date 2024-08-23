@@ -18,14 +18,17 @@ app.use('/assets', express.static('./public/images'));
 const usersController = require('./users/users.controller');
 const cheannelsController = require('./channels/channels.controller');
 const categoriesController = require('./categories/categories.controller');
-// const tagsController = require()
+const tagsController = require('./tags/tags.controller');
 
 
 app.use('/api/users', upload.none(), usersController);
 
 app.use('/api/categories', upload.none(), categoriesController);
+app.use('/api/tags', upload.none(), tagsController);
 
 app.use('/api/channels', upload.single('image'), cheannelsController);
+
+
 
 
 
