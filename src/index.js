@@ -19,12 +19,14 @@ const usersController = require('./users/users.controller');
 const cheannelsController = require('./channels/channels.controller');
 const categoriesController = require('./categories/categories.controller');
 const tagsController = require('./tags/tags.controller');
+const followController = require('./follows/follows.controller');
 
 
 app.use('/api/users', upload.none(), usersController);
 
 app.use('/api/categories', upload.none(), categoriesController);
 app.use('/api/tags', upload.none(), tagsController);
+app.use('/api', upload.none(), followController);
 
 app.use('/api/channels', upload.single('image'), cheannelsController);
 
