@@ -34,15 +34,20 @@ router.get('/channels/:id/followers', async (req, res) => {
     }
 })
 
-router.post('/follows', async (req,res) => {
+router.post('/follows', async (req, res) => {
     try {
         const followdata = req.body;
-        const fl = await create(followdata);
-        res.send(fl);
+        const channelId = req.query.id; 
+        
+        
+        const fl = await create(followdata, channelId);
+        res.status(201).send(fl);
     } catch (error) {
-        res.status(400).send(error.message);
+        console.log("Error terjadi:", error.message);
+        res.status(400).send({ error: error.message });
     }
-})
+});
+
 
 router.post('/follows/:id', async (req,res) => {
     try {

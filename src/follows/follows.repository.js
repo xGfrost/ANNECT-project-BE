@@ -1,4 +1,5 @@
 const prisma = require('../db');
+// const { findbyid } = require('../channels/channel.repository')
 
 // const findall = async (user_id) => {
 //     const follow = await prisma.follows.findMany({
@@ -37,6 +38,7 @@ const findallchannelfollowersbyid = async (channel_id) => {
 }
 
 const insert = async (followdata) => {
+    
     const fl = await prisma.follows.create({
         data:{
             user_id: followdata.user_id,
@@ -61,3 +63,17 @@ module.exports = {
     deleteid,
     // findall,
 }
+
+// const channel = await prisma.channels.findUnique({
+    //     where: {
+    //         id: followdata.channel_id
+    //     }
+    // });
+
+    // if (!channel) {
+    //     throw new Error('Channel not found');
+    // }
+
+    // if (channel.user_id === followdata.user_id) {
+    //     throw new Error('You cannot follow your own channel');
+    // }
