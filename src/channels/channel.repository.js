@@ -1,9 +1,12 @@
 const prisma = require('../db');
 const cuid = require('cuid');
 
-const findall = async (name) => {
+const findall = async (name, user_id) => {
     const ch = await prisma.channels.findMany({
         where:{
+            NOT:{
+                user_id:user_id
+            },
             name:{
                 contains: name,
             }

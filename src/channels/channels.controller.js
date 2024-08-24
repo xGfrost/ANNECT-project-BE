@@ -5,12 +5,13 @@ const router = express.Router();
 router.get('/', async (req, res) => {
     try {
         const name = req.query.name
+        const user_id = req.query.user_id
         let ch;
         if (name) {
-            ch = await getall(name)
+            ch = await getall(name, user_id)
         } else {
             
-             ch = await getall();
+             ch = await getall(name,user_id);
         }
         res.send(ch)
     } catch (error) {

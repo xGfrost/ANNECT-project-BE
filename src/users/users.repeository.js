@@ -14,11 +14,22 @@ const finduserbyid = async (id) => {
             user_events:{
                 include:{
                     events:true
-                }
+                },
+                take: 3
             },
-            channels:true,
-            favorites:true
-        }
+            channels:{
+                include:{
+                    users:true
+                },
+                take: 3
+            },
+            favorites:{
+                include:{
+                    events:true
+                },
+                take: 3
+            }
+        },
     })
     return user;
 }

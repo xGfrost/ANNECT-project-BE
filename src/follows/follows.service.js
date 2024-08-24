@@ -1,4 +1,9 @@
-const {  findallusersfollowbyid, findallchannelfollowersbyid, insert, deleteid } = require('./follows.repository');
+const {  findallusersfollowbyid, findallchannelfollowersbyid, insert, deleteid, findall } = require('./follows.repository');
+
+// const getall = async () => {
+//     const follow = await findall();
+//     return follow;
+// }
 
 
 const findfollowbyuserid = async (id) => {  
@@ -24,4 +29,5 @@ module.exports = {
     findfollowbychannelid,
     create,
     deletefollow,
+    // getall,
 }

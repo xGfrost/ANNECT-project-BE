@@ -1,7 +1,18 @@
 const express = require('express');
-const { findfollowbyuserid, findfollowbychannelid, create, deletefollow } = require('./follows.service');
-const { deleteid } = require('./follows.repository');
+const { findfollowbyuserid, findfollowbychannelid, create, deletefollow, getall } = require('./follows.service');
+// const { deleteid } = require('./follows.repository');
 const router = express.Router();
+
+// router.get('/follow', async (req, res) => {
+//     try {
+//         const user_id = req.query.user_id;
+//         let follow;
+//         follow = await getall(user_id);
+//         res.send(follow)
+//     } catch (error) {
+//         res.status(400).send(error.message);
+//     }
+// })
 
 router.get('/users/:id/follows', async (req, res) => {
     try {

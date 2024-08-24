@@ -1,5 +1,18 @@
 const prisma = require('../db');
 
+// const findall = async (user_id) => {
+//     const follow = await prisma.follows.findMany({
+//         where:{
+//             user_id:{
+//                 contains: user_id
+//             }
+            
+//         },
+//         skip: user_id,
+//     })
+//     return follow;
+// }
+
 const findallusersfollowbyid = async (user_id) => {
     const follow = await prisma.follows.findMany({
         where:{
@@ -46,4 +59,5 @@ module.exports = {
     findallchannelfollowersbyid,
     insert,
     deleteid,
+    // findall,
 }

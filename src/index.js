@@ -20,6 +20,7 @@ const cheannelsController = require('./channels/channels.controller');
 const categoriesController = require('./categories/categories.controller');
 const tagsController = require('./tags/tags.controller');
 const followController = require('./follows/follows.controller');
+// const discussionroomController = require("")
 
 
 app.use('/api/users', upload.none(), usersController);
