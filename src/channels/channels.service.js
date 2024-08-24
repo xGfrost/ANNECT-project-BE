@@ -1,7 +1,7 @@
 const { findall, findbyid, insert, edit } = require('./channel.repository');
 
-const getall = async () => {
-    const ch = await findall();
+const getall = async (name) => {
+    const ch = await findall(name);
     return ch;
 }
 
