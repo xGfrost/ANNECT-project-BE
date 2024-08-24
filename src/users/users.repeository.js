@@ -9,6 +9,15 @@ const finduserbyid = async (id) => {
     const user = await prisma.users.findUnique({
         where:{
             id: id,
+        },
+        include:{
+            user_events:{
+                include:{
+                    events:true
+                }
+            },
+            channels:true,
+            favorites:true
         }
     })
     return user;
