@@ -17,13 +17,16 @@ model categories {
 
 model channels {
   id          String    @id @default(cuid())
-  user_id     String?   @db.VarChar(255)
-  name        String?   @db.VarChar(255)
-  description String?   @db.VarChar(255)
-  image       String?   @db.VarChar(255)
+  user_id     String    @db.VarChar(255)
+  name        String    @db.VarChar(255)
+  description String    @db.VarChar(255)
+  image       String    @db.VarChar(255)
   created_at  DateTime  @default(now())
   updated_at  DateTime  @updatedAt
-  users       users?    @relation(fields: [user_id], references: [id], onDelete: Restrict, onUpdate: Restrict, map: "channels_ibfk_1")
+  no_rek      String    @db.VarChar(255)
+  nik         String    @db.VarChar(255)
+  ktp         String    @db.VarChar(255)
+  users       users     @relation(fields: [user_id], references: [id], onUpdate: Restrict, map: "channels_ibfk_1")
   events      events[]
   follows     follows[]
 

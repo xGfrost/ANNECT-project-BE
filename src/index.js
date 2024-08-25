@@ -15,6 +15,7 @@ app.use(middlewareLogRequest);
 app.use(express.urlencoded({ extended:true}));
 app.use('/assets', express.static('./public/images'));
 
+const multipleupload = upload.fields([{name: 'image'}, {name: 'ktp'}])
 const usersController = require('./users/users.controller');
 const cheannelsController = require('./channels/channels.controller');
 const categoriesController = require('./categories/categories.controller');
@@ -29,7 +30,8 @@ app.use('/api/categories', upload.none(), categoriesController);
 app.use('/api/tags', upload.none(), tagsController);
 app.use('/api', upload.none(), followController);
 
-app.use('/api/channels', upload.single('image'), cheannelsController);
+app.use('/api/channels', multipleupload, cheannelsController);
+console.log(multipleupload)
 
 
 
