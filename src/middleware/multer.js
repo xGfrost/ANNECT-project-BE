@@ -5,6 +5,7 @@ const storage = multer.diskStorage({
         cb(null, 'public/images')
     },
     filename: (req, file, cb) => {
+        // console.log(file, req);
         const timestamp = new Date().getTime();
         const originalname = file.originalname;
 
