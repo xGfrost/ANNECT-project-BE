@@ -30,11 +30,14 @@ router.get('/:id', async (req, res) => {
 })
 
 router.post('/', async (req,res) => {
-    const{file}= req;
-    const image = file.filename;
+    // const{file}= req;
+    // const image = file.filename;
+    // const ktp = file.filename;
+    
     try {
         const channelsdata = req.body;
-        channelsdata.image = image;
+        // channelsdata.image = image;
+        // channelsdata.ktp = ktp;
         const ch = await create(channelsdata);
         res.send(ch);
     } catch (error) {
