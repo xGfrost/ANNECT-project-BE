@@ -1,7 +1,7 @@
 const prisma = require('../db');
 
 const getAll = async (user_id) => {
-    return await prisma.favorites.findMany({
+    return prisma.favorites.findMany({
         where: {
             user_id: user_id
         },
@@ -11,8 +11,8 @@ const getAll = async (user_id) => {
     })
 }
 
-const deleteById = async (favorite_id) => {
-    return await prisma.favorites.delete({
+const deleteById = (favorite_id) => {
+    return prisma.favorites.delete({
         where: {
             id: favorite_id
         }
