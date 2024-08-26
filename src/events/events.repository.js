@@ -12,6 +12,14 @@ const getAll = () => (
     })
 )
 
+const getById = (eventId) => (
+    prisma.events.findFirst({
+        where: {
+            id: eventId
+        }
+    })
+)
+
 const insert = (eventData) => (
     prisma.events.create({
         data: { ...eventData }
@@ -33,4 +41,5 @@ module.exports = {
     getAll,
     updateById,
     insert,
+    getById,
 }
