@@ -20,6 +20,19 @@ const getById = (eventId) => (
     })
 )
 
+const getDetail = (eventId) => (
+    prisma.events.findUnique({
+        where: {
+            id: eventId
+        },
+        include: {
+            channels: true
+        }
+    })
+)
+
+const getSimilar = (eventTag, eventCategory)
+
 const insert = (eventData) => (
     prisma.events.create({
         data: { ...eventData }
@@ -42,4 +55,5 @@ module.exports = {
     updateById,
     insert,
     getById,
+    getDetail,
 }
