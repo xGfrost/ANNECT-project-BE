@@ -26,6 +26,9 @@ router.post('/', async (req, res) => {
         const insertedEvent = await insertEvent(req.body);
         res.send(insertedEvent);
     } catch (error) {
+        if (error.message == "NOT AUTHORIZED") {
+            res.status(403).send(error.message);
+        }
         res.status(400).send(error.message);
     }
 })
