@@ -17,8 +17,8 @@ const insertEvent = async (requestBody, eventData) => {
 
 const getEventDetail = async (event_id) => {
     const eventDetail = await getDetail(event_id);
-    const { tag_id, channel_id } = eventDetail;
-    const similarEvent = await getSimilar(tag_id, channel_id);
+    const { tag_id, channel_id, id } = eventDetail;
+    const similarEvent = await getSimilar(id, tag_id, channel_id);
     eventDetail.similar_event = similarEvent;
     return eventDetail;
 }
