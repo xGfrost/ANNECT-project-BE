@@ -21,7 +21,7 @@ router.post('/:event_id', async (req, res) => {
     }
 })
 
-router.get('/event_id', async (req, res) => {
+router.get('/:event_id', async (req, res) => {
     try {
         const { event_id } = req.params;
         const eventDetail = await getEventDetail(event_id);
