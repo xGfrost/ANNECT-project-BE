@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const { getAllEvents, updateEvent, insertEvent } = require('./events.service');
+const { getAllEvents, updateEvent, insertEvent, getEventDetail } = require('./events.service');
 const router = Router();
 
 router.get('/', async (_, res) => {
@@ -16,6 +16,16 @@ router.post('/:event_id', async (req, res) => {
         const { event_id } = req.params;
         const updatedEvent = await updateEvent(req.body, event_id);
         res.send(updatedEvent);
+    } catch (error) {
+        res.status(400).send(error.message);
+    }
+})
+
+router.get('/event_id', async (req, res) => {
+    try {
+        const { event_id } = req.params;
+        const eventDetail = await getEventDetail(event_id);
+        res.send(eventDetail);
     } catch (error) {
         res.status(400).send(error.message);
     }

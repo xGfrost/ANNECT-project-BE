@@ -1,4 +1,4 @@
-const { getAll, updateById, insert } = require('./events.repository');
+const { getAll, updateById, insert, getDetail, getSimilar } = require('./events.repository');
 const { finduserbyid } = require('../users/users.repeository');
 
 const getAllEvents = () => (getAll());
@@ -15,8 +15,17 @@ const insertEvent = async (requestBody, eventData) => {
     return insert(eventData);
 };
 
+const getEventDetail = async (event_id) => {
+    const eventDetail = await getDetail(event_id);
+    const { tag_id, channel_id } = eventDetail;
+    const similarEvent = await getSimilar(tag_id, channel_id);
+    eventDetail.similar_event = similarEvent;
+    return eventDetail;
+}
+
 module.exports = {
     getAllEvents,
     updateEvent,
     insertEvent,
+    getEventDetail,
 }

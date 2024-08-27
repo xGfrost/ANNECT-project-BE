@@ -31,7 +31,17 @@ const getDetail = (eventId) => (
     })
 )
 
-const getSimilar = (eventTag, eventCategory)
+const getSimilar = (eventTagId, eventCategoryId) => (
+    prisma.events.findMany({
+        take: 3,
+        where: {
+            OR: [
+                { tag_id: { equals: eventTagId } },
+                { category_id: { equals: eventCategoryId } }
+            ]
+        }
+    })
+)
 
 const insert = (eventData) => (
     prisma.events.create({
@@ -56,4 +66,5 @@ module.exports = {
     insert,
     getById,
     getDetail,
+    getSimilar,
 }
