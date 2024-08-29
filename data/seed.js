@@ -6,12 +6,15 @@ const events = require('./events.json');
 const channels = require('./channels.json');
 const chats = require('./chats.json');
 const favorites = require('./favorites.json');
+const user_events = require('./user_events.json');
 const prisma = require('../src/db/index');
 
 
 const main = async () => {
     console.log("Truncating all table...");
 
+    await prisma.user_events.deleteMany();
+    console.log("Truncated table user_events...");
     await prisma.favorites.deleteMany();
     console.log("Truncated table favories...");
     await prisma.follows.deleteMany();
@@ -62,6 +65,10 @@ const main = async () => {
 
     await prisma.favorites.createMany({
         data: favorites
+    })
+
+    await prisma.user_events.createMany({
+        data: user_events
     })
 
     console.log("Seeded all table!");
