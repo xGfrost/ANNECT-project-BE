@@ -26,7 +26,8 @@ const getDetail = (eventId) => (
             id: eventId
         },
         include: {
-            channels: true
+            channels: true,
+            tags: true,
         }
     })
 )
