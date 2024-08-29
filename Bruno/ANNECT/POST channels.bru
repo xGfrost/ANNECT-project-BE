@@ -6,16 +6,28 @@ meta {
 
 post {
   url: {{baseUrl}}/
-  body: multipartForm
+  body: json
   auth: none
+}
+
+body:json {
+  {
+    "user_id": "ck9wz1p7v000001mqcgjd3v29",
+    "name": "delvi",
+    "description": "family",
+    "image": "image.png",
+    "no_rek": "1122334567",
+    "nik": "44556655",
+    "ktp": "ktp2.png"
+  }
 }
 
 body:multipart-form {
   user_id: ck9wz1p7v000001mqcgjd3v29
   name: delvi
   description: PROPLAYER
-  image: @file(C:\Users\Legion\OneDrive\Pictures\Saved Pictures\CLUB (2).jpg)
-  no_rek: 0854
-  nik: 112233
-  ktp: @file(C:\Users\Legion\OneDrive\Pictures\Saved Pictures\CLUB (3).jpg)
+  image: image5.img
+  no_rek: 112233
+  nik: 22334455
+  ktp: ktp11.png
 }
