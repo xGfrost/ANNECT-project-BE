@@ -1,7 +1,7 @@
 const { findall, insert, edit } = require("./tags.repository");
 
-const getall = async () => {
-  const tg = await findall();
+const getall = async (name) => {
+  const tg = await findall(name);
   return tg;
 };
 

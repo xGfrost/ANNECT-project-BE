@@ -7,10 +7,17 @@ const {
 } = require("./events.service");
 const router = Router();
 
-router.get("/", async (_, res) => {
+router.get("/", async (req, res) => {
   try {
-    const allEvents = await getAllEvents();
-    res.send(allEvents);
+    const name = req.query.name;
+    let event;
+    if (name) {
+      event = await getAllEvents(name);
+    } else {
+      event = await getAllEvents();
+    }
+    // const allEvents = await getAllEvents();
+    res.send(event);
   } catch (error) {
     res.status(400).send(error.message);
   }

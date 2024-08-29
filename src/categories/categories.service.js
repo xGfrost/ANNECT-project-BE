@@ -1,7 +1,7 @@
 const { findall, insert, edit } = require('./categories.repository');
 
-const getall = async () => {
-    const cg = await findall()
+const getall = async (name) => {
+    const cg = await findall(name)
     return cg;
 }
 

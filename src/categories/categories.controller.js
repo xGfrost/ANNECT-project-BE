@@ -4,7 +4,14 @@ const router = express.Router();
 
 router.get('/', async (req,res) => {
     try {
-        const cg = await getall();
+        const name  = req.query.name;
+        let cg;
+        if (name) {
+            cg = await getall(name);
+        } else {
+            
+            cg = await getall();
+        }
         res.send(cg);
     } catch (error) {
         res.status(400).send(error.message);

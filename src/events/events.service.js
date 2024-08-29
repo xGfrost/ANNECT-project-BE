@@ -7,7 +7,7 @@ const {
 } = require("./events.repository");
 const { finduserbyid } = require("../users/users.repeository");
 
-const getAllEvents = () => getAll();
+const getAllEvents = (name) => getAll(name);
 
 const updateEvent = (eventData, eventId) => updateById(eventData, eventId);
 

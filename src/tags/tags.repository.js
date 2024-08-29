@@ -1,8 +1,17 @@
 const prisma = require("../db");
 const cuid = require("cuid");
 
-const findall = async () => {
-  const tg = await prisma.tags.findMany();
+const findall = async (name) => {
+  const tg = await prisma.tags.findMany({
+    where:{
+      name:{
+        contains: name,
+      }
+    },
+    include:{
+      events: true,
+    }
+  });
   return tg;
 };
 
