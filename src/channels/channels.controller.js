@@ -61,12 +61,9 @@ router.post("/", async (req, res) => {
 });
 
 router.post("/:id", async (req, res) => {
-  const { file } = req;
-  const image = file.filename;
   try {
     const id = req.params.id;
     const channelsdata = req.body;
-    channelsdata.image = image;
     const ch = await update(id, channelsdata);
     res.send(ch);
   } catch (error) {

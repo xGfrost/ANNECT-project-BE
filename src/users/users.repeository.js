@@ -1,7 +1,18 @@
 const prisma = require('../db');
 
+
+
 const findallusers = async () => {
-    const user = await prisma.users.findMany();
+    const user = await prisma.users.findMany({
+        where:{
+            NOT:{
+                role:'ADMIN'
+                
+            }
+            
+        }
+        
+    });
     return user;
 }
 
@@ -37,4 +48,5 @@ const finduserbyid = async (id) => {
 module.exports = {
     findallusers,
     finduserbyid,
+    
 }

@@ -1,4 +1,4 @@
-const { findallusers, finduserbyid } = require('./users.repeository');
+const { findallusers, finduserbyid, countallusers } = require('./users.repeository');
 
 const getall = async () => {
     const user = await findallusers();
@@ -14,7 +14,10 @@ const getbyid = async (id) => {
     return user;
 }
 
+
+
 module.exports = {
     getall,
     getbyid,
+    
 }

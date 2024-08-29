@@ -24,7 +24,11 @@ const followController = require('./follows/follows.controller');
 // const discussionroomController = require("")
 const favoriteController = require('./favorites/favorites.controller');
 const eventController = require('./events/events.controller');
+<<<<<<< HEAD
 const dashboardcontroller = require('./dashboards/dashboard.controller');
+=======
+const userEventController = require('./user_events/user_events.controller');
+>>>>>>> 5d8fae67b877940f4f0a530e283aadcf8c941910
 
 
 app.use('/api/users', upload.none(), usersController);
@@ -34,6 +38,7 @@ app.use('/api/tags', upload.none(), tagsController);
 app.use('/api', upload.none(), followController);
 app.use('/api', upload.none(), favoriteController);
 app.use('/api/events', upload.none(), eventController);
+app.use('/api/user_events', upload.none(), userEventController);
 
 app.use('/api/channels', upload.none(), cheannelsController);
 app.use('/api/dashboard', upload.none(), dashboardcontroller);

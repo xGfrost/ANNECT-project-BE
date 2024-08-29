@@ -1,5 +1,5 @@
 const express = require('express');
-const { getall, getbyid } = require('./users.service');
+const { getall, getbyid, totalusers } = require('./users.service');
 const router = express.Router();
 
 router.get('/', async (req, res) => {
@@ -20,5 +20,16 @@ router.get('/:id', async (req, res) => {
         res.status(400).send(error.message);
     }
 })
+
+router.get('/total', async (req, res) => {
+    try {
+        const user = await totalusers();
+        res.send({
+            totalusers: user
+        });
+    } catch (error) {
+        res.status(400).send(error.message);
+    }
+});
 
 module.exports = router;
