@@ -37,9 +37,11 @@ const countall = async () => {
       events: true,
     },
   });
+  const tagsWithEventCount = {};
 
-//   total semua jumlah event
-//   total semua event by tag nya, contoh event dengan tag beasiswa = 5
+  tags.forEach((tag) => {
+    tagsWithEventCount[tag.name] = tag.events.length;
+  });
 
   return {
     userCount,
@@ -47,6 +49,7 @@ const countall = async () => {
     channelCount,
     totalprice,
     transaction,
+    tagsWithEventCount,
   };
 };
 
