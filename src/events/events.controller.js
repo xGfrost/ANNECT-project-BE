@@ -10,11 +10,13 @@ const router = Router();
 router.get("/", async (req, res) => {
   try {
     const name = req.query.name;
+    const is_paid = req.query.is_paid === 'true'; // Konversi string 'true' atau 'false' ke Boolean
     let event;
-    if (name) {
-      event = await getAllEvents(name);
+    
+    if (name || typeof is_paid === 'boolean') {
+      event = await getAllEvents(name, is_paid);
     } else {
-      event = await getAllEvents();
+      event = await getAllEvents(); // Jika tidak ada parameter, ambil semua events
     }
     // const allEvents = await getAllEvents();
     res.send(event);
