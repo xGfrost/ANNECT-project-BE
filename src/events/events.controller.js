@@ -1,4 +1,4 @@
-const { Router } = require("express");
+const { Router, query } = require("express");
 const {
   getAllEvents,
   updateEvent,
@@ -9,21 +9,58 @@ const router = Router();
 
 router.get("/", async (req, res) => {
   try {
-    const name = req.query.name;
-    const is_paid = req.query.is_paid === 'true'; // Konversi string 'true' atau 'false' ke Boolean
-    let event;
-    
-    if (name || typeof is_paid === 'boolean') {
-      event = await getAllEvents(name, is_paid);
-    } else {
-      event = await getAllEvents(); // Jika tidak ada parameter, ambil semua events
+    // Ambil parameter query dari URL
+    const name = req.query.name || null;
+    const is_paid = req.query.is_paid ? req.query.is_paid === 'true' : undefined;
+    const tags = req.query.tags ? req.query.tags.split(',') : [];
+    const categories = req.query.categories ? req.query.categories.split(',') : [];
+
+    // Membuat objek filter berdasarkan parameter yang diterima
+    const filter = {
+      where: {},
+      include: {
+        tags: tags.length > 0 ? { where: { id: { in: tags } } } : false,
+        categories: categories.length > 0 ? { where: { id: { in: categories } } } : false,
+        user_events: {
+          select: {
+            users: true,
+          },
+        },
+      },
+    };
+
+    if (name) {
+      filter.where.name = {
+        contains: name,
+      };
     }
-    // const allEvents = await getAllEvents();
-    res.send(event);
+
+    if (is_paid !== undefined) {
+      filter.where.is_paid = is_paid;
+    }
+
+    if (tags.length > 0) {
+      filter.where.tag_id = {
+        in: tags,
+      };
+    }
+
+    if (categories.length > 0) {
+      filter.where.category_id = {
+        in: categories,
+      };
+    }
+
+    // Panggil fungsi repository dengan filter yang sudah dibangun
+    const events = await getAllEvents(filter);
+
+    res.send(events);
   } catch (error) {
+    console.error("Error retrieving events:", error.message);
     res.status(400).send(error.message);
   }
 });
+
 
 router.post("/:event_id", async (req, res) => {
   try {

@@ -1,25 +1,8 @@
 const prisma = require("../db/index");
 
-const getAll = (name, is_paid) =>
-  prisma.events.findMany({
-    where:{
-      name:{
-        contains: name
-      },
-      is_paid:{
-        equals: is_paid
-      }
-    },
-    include: {
-      tags:true,
-      categories:true,
-      user_events: {
-        select: {
-          users: true,
-        },
-      },
-    },
-  });
+const getAll = (filter) => {
+  return prisma.events.findMany(filter);
+};
 
 const getById = (eventId) =>
   prisma.events.findFirst({
