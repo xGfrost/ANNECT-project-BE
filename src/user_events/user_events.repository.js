@@ -1,9 +1,9 @@
 const prisma = require("../db/index");
 
-const getById = (user_events_id) =>
+const getById = (user_id) =>
   prisma.user_events.findUnique({
     where: {
-      id: user_events_id,
+      user_id: user_id,
     },
     include: {
       events: true,
