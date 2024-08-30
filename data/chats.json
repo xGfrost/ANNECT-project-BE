@@ -20,7 +20,7 @@
     {
         "id": "cm0c9z6my000a0clb69m46spg",
         "user_id": "ck9wz1p7v000001mqcgjd3v29",
-        "message": "Slava Ukraine! Slava ZOV! Slava Wagnar",
+        "message": "Glory to Ukraine!",
         "event_id": "ck9x7vb7v000003mqfgh789f"
     },
     {
@@ -28,5 +28,65 @@
         "user_id": "ck9wz1p7v000002mqy5jk7gtl",
         "message": "The quick brown fox jumps over the lazy dog",
         "event_id": "ck9x7vb7v000005mqlmn654h"
+    },
+    {
+        "id": "cm0c9z6my140m0clb6nev2s156",
+        "user_id": "ck9wz1p7v000001mqcgjd3v29",
+        "message": "Lokasi acara di Jakarta",
+        "event_id": "ck9x7vb7v000004mqijk321g"
+    },
+    {
+        "id": "cm0c9z6my150n0clb7oev2s157",
+        "user_id": "ck9wz1p7v000002mqy5jk7gtl",
+        "message": "Kontak person acara adalah Budi",
+        "event_id": "ck9x7vb7v000007mqrtu543j"
+    },
+    {
+        "id": "cm0c9z6my160o0clb8pev2s158",
+        "user_id": "ck9wz1p7v000002mqy5jk7gtl",
+        "message": "Acara dimulai pukul 10 pagi",
+        "event_id": "ck9x7vb7v000010mqxyz432m"
+    },
+    {
+        "id": "cm0c9z6my170p0clb9qev2s159",
+        "user_id": "ck9wz1p7v000003mqflht9thx",
+        "message": "Lokasi acara di Bandung",
+        "event_id": "ck9x7vb7v000002mqxyz456e"
+    },
+    {
+        "id": "cm0c9z6my180q0clb0rev2s160",
+        "user_id": "ck9wz1p7v000003mqflht9thx",
+        "message": "Kontak person acara adalah Siti",
+        "event_id": "ck9x7vb7v000009mquvw210l"
+    },
+    {
+        "id": "cm0c9z6my190r0clb1sev2s161",
+        "user_id": "ck9wz1p7v000001mqcgjd3v29",
+        "message": "Acara dimulai pukul 2 siang",
+        "event_id": "ck9x7vb7v000001mqabc123d"
+    },
+    {
+        "id": "cm0c9z6my200s0clb2tev2s162",
+        "user_id": "ck9wz1p7v000002mqy5jk7gtl",
+        "message": "Lokasi acara di Surabaya",
+        "event_id": "ck9x7vb7v000006mqopq987i"
+    },
+    {
+        "id": "cm0c9z6my210t0clb3uev2s163",
+        "user_id": "ck9wz1p7v000002mqy5jk7gtl",
+        "message": "Kontak person acara adalah Andi",
+        "event_id": "ck9x7vb7v000003mqfgh789f"
+    },
+    {
+        "id": "cm0c9z6my220u0clb4vev2s164",
+        "user_id": "ck9wz1p7v000003mqflht9thx",
+        "message": "Acara dimulai pukul 9 pagi",
+        "event_id": "ck9x7vb7v000005mqlmn654h"
+    },
+    {
+        "id": "cm0c9z6my230v0clb5wev2s165",
+        "user_id": "ck9wz1p7v000003mqflht9thx",
+        "message": "Lokasi acara di Bali",
+        "event_id": "ck9x7vb7v000008mqstu876k"
     }
 ]
