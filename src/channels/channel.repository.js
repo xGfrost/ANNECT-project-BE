@@ -82,6 +82,11 @@ const edit = async (id, channelsdata) => {
             name:channelsdata.name,
             description:channelsdata.description,
             image:channelsdata.image,
+            nik:channelsdata.nik,
+            no_rek:channelsdata.no_rek,
+            phone:channelsdata.phone,
+            status:channelsdata.status,
+
         }
     })
     return ch;
