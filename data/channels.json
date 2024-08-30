@@ -5,8 +5,6 @@
         "name": "Tech Talks",
         "description": "Channel diskusi tentang the latest in technology.",
         "image": "https://loremflickr.com/1200/600/mountain",
-        "created_at": "2024-08-23 11:00:00.000",
-        "updated_at": "2024-08-23 11:00:00.000",
         "nik": "3646565633",
         "no_rek": "3646565633"
     },
@@ -16,8 +14,6 @@
         "name": "Gaming Hub",
         "description": "Semua tentang games dan gaming trends.",
         "image": "https://loremflickr.com/1200/600/mountain",
-        "created_at": "2024-08-23 11:05:00.000",
-        "updated_at": "2024-08-23 11:05:00.000",
         "nik": "3646565633",
         "no_rek": "3646565633"
     },
@@ -27,8 +23,6 @@
         "name": "Healthy Living",
         "description": "Tips dan discussions untuk maintain a healthy lifestyle.",
         "image": "https://loremflickr.com/1200/600/mountain",
-        "created_at": "2024-08-23 11:10:00.000",
-        "updated_at": "2024-08-23 11:10:00.000",
         "nik": "3646565633",
         "no_rek": "3646565633"
     },
@@ -38,8 +32,6 @@
         "name": "Scholar Talk",
         "description": "Membahas semua tentang scholarship",
         "image": "https://loremflickr.com/1200/600/mountain",
-        "created_at": "2024-08-23 08:56:30.931",
-        "updated_at": "2024-08-23 08:57:59.410",
         "nik": "3646565633",
         "no_rek": "3646565633"
     }
