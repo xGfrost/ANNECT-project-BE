@@ -1,47 +1,47 @@
 [
     {
-        "id": "ck9wz1p7v000001mqcgjd3v29",
-        "name": "Alice Johnson",
-        "email": "alice.johnson@example.com",
-        "image": "https://ui-avatars.com/api/?background=random",
-        "role": "ADMIN",
-        "created_at": "2024-08-23T10:30:00.000Z",
-        "updated_at": "2024-08-23T10:30:00.000Z"
-    },
-    {
-        "id": "ck9wz1p7v000002mqy5jk7gtl",
-        "name": "Bob Smith",
-        "email": "bob.smith@example.com",
-        "image": "https://ui-avatars.com/api/?background=random",
-        "role": "USER",
-        "created_at": "2024-08-23T10:35:00.000Z",
-        "updated_at": "2024-08-23T10:35:00.000Z"
-    },
-    {
-        "id": "ck9wz1p7v000003mqflht9thx",
-        "name": "Charlie Brown",
-        "email": "charlie.brown@example.com",
-        "image": "https://ui-avatars.com/api/?background=random",
-        "role": "USER",
-        "created_at": "2024-08-23T10:40:00.000Z",
-        "updated_at": "2024-08-23T10:40:00.000Z"
-    },
-    {
         "id": "user_2kyN7GxSTQcjdJTq8vRG4RkzW8F",
         "name": "AZwinnn",
-        "email": "aZwinarung@mail.com",
-        "image": "https://ui-avatars.com/api/?background=random",
+        "email": "aswinarung1@gmail.com",
+        "image": "https://ui-avatars.com/api/?background=random&name=Azwim+Arr",
         "role": "USER",
         "created_at": "2024-08-28T02:53:20.000Z",
         "updated_at": "2024-08-28T02:53:20.000Z"
     },
     {
-        "id": "cm0ewsc200000bmd618okays2",
-        "name": "V. Zelensky",
-        "email": "zelensky@ua.gov",
-        "image": "https://ui-avatars.com/api/?background=random",
+        "id": "user_3klL7HyUBVdnmKPz9jFD5SxZ1KX",
+        "name": "JohnDoe",
+        "email": "johndoe@gmail.com",
+        "image": "https://ui-avatars.com/api/?background=random&name=John+Doe",
         "role": "USER",
-        "created_at": "2024-08-28T02:53:20.000Z",
-        "updated_at": "2024-08-28T02:53:20.000Z"
+        "created_at": "2024-08-29T04:10:15.000Z",
+        "updated_at": "2024-08-29T04:10:15.000Z"
+    },
+    {
+        "id": "user_4mnO9IjVWCemqLPz0gHY7UvA2KL",
+        "name": "JaneSmith",
+        "email": "janesmith@gmail.com",
+        "image": "https://ui-avatars.com/api/?background=random&name=Jane+Smith",
+        "role": "ADMIN",
+        "created_at": "2024-08-30T05:20:30.000Z",
+        "updated_at": "2024-08-30T05:20:30.000Z"
+    },
+    {
+        "id": "user_5opQ1KlXDFngrQRz1hIJ8WxB3MO",
+        "name": "EmilyJones",
+        "email": "emilyjones@gmail.com",
+        "image": "https://ui-avatars.com/api/?background=random&name=Emily+Jones",
+        "role": "USER",
+        "created_at": "2024-08-31T06:25:45.000Z",
+        "updated_at": "2024-08-31T06:25:45.000Z"
+    },
+    {
+        "id": "user_6qrS3MpYZHosoTRz2kKL9AyC4PQ",
+        "name": "Volodymyr Zelenskyy",
+        "email": "michaelbrown@gmail.com",
+        "image": "https://ui-avatars.com/api/?background=random&name=Volodymyr+Zelenskyy",
+        "role": "USER",
+        "created_at": "2024-09-01T07:35:55.000Z",
+        "updated_at": "2024-09-01T07:35:55.000Z"
     }
 ]
