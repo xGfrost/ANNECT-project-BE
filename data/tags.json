@@ -1,58 +1,22 @@
 [
     {
-        "id": "ck9x3sl7v000001mqjc4pqvtg",
-        "name": "Inovasi"
+        "id": "ck9x3sl7v000002nqjc4pqvth",
+        "name": "beasiswa"
     },
     {
-        "id": "ck9x3sl7v000002mqkvrjtybg",
-        "name": "Esports"
+        "id": "ck9x3sl7v000003oqjc4pqvti",
+        "name": "seminar"
     },
     {
-        "id": "ck9x3sl7v000003mq84vcxkfp",
-        "name": "Teknologi"
+        "id": "ck9x3sl7v000004pqjc4pqvtj",
+        "name": "bootcamp"
     },
     {
-        "id": "ckz9t9m000001o9ha9jthx7dn",
-        "name": "Aksi Keberlangsungan"
+        "id": "ck9x3sl7v000005rqjc4pqvtk",
+        "name": "workshop"
     },
     {
-        "id": "ckz9t9m000002o9ha9xthx8ty",
-        "name": "Aksi Lingkungan"
-    },
-    {
-        "id": "ckz9t9m000003o9ha9ythx9uz",
-        "name": "Donor Darah"
-    },
-    {
-        "id": "ckz9t9m000004o9ha90thx3ad",
-        "name": "Gratis"
-    },
-    {
-        "id": "ckz9t9m000005o9ha91thx4bc",
-        "name": "Volunteer"
-    },
-    {
-        "id": "ckz9t9m000006o9ha92thx5de",
-        "name": "Berbayar"
-    },
-    {
-        "id": "ckz9t9m000007o9ha93thx6fg",
-        "name": "Recycling"
-    },
-    {
-        "id": "ckz9t9m000008o9ha94thx7hj",
-        "name": "Kesehatan Mental"
-    },
-    {
-        "id": "ckz9t9m000009o9ha95thx8ik",
-        "name": "Penyelamatan Hewan"
-    },
-    {
-        "id": "ckz9t9m00000ao9ha96thx9jl",
-        "name": "Astronomi"
-    },
-    {
-        "id": "cm06i8u1s0000mkincse25lx3",
-        "name": "Komputer"
+        "id": "ck9x3sl7v000006sqjc4pqvtl",
+        "name": "asisten riset"
     }
 ]

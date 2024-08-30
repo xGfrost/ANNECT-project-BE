@@ -1,7 +1,7 @@
 [
     {
         "id": "ck9wz8q7v000001mqcn64htz8",
-        "user_id": "ck9wz1p7v000001mqcgjd3v29",
+        "user_id": "user_2kyN7GxSTQcjdJTq8vRG4RkzW8F",
         "name": "Tech Talks",
         "description": "Channel diskusi tentang the latest in technology.",
         "image": "https://loremflickr.com/1200/600/mountain",
@@ -9,57 +9,84 @@
         "no_rek": "3646565633"
     },
     {
-        "id": "ck9wz8q7v000002mqcpjq6gxm",
-        "user_id": "ck9wz1p7v000002mqy5jk7gtl",
-        "name": "Gaming Hub",
-        "description": "Semua tentang games dan gaming trends.",
-        "image": "https://loremflickr.com/1200/600/mountain",
-        "nik": "3646565633",
-        "no_rek": "3646565633"
+        "id": "ck9x1rs8v000002mqcn64htza",
+        "user_id": "user_3klL7HyUBVdnmKPz9jFD5SxZ1KX",
+        "name": "Code Masters",
+        "description": "Channel untuk berbagi tips dan trik coding.",
+        "image": "https://loremflickr.com/1200/600/code",
+        "nik": "3646565634",
+        "no_rek": "3646565634"
     },
     {
-        "id": "ck9wz8q7v000003mqa1khqvxs",
-        "user_id": "ck9wz1p7v000003mqflht9thx",
-        "name": "Healthy Living",
-        "description": "Tips dan discussions untuk maintain a healthy lifestyle.",
-        "image": "https://loremflickr.com/1200/600/mountain",
-        "nik": "3646565633",
-        "no_rek": "3646565633"
+        "id": "ck9x2rs9v000003mqcn64htzb",
+        "user_id": "user_4mnO9IjVWCemqLPz0gHY7UvA2KL",
+        "name": "Green Energy",
+        "description": "Channel diskusi tentang energi terbarukan.",
+        "image": "https://loremflickr.com/1200/600/energy",
+        "nik": "3646565635",
+        "no_rek": "3646565635"
     },
     {
-        "id": "cm06h980g00009gingr8geaqz",
-        "user_id": "ck9wz1p7v000001mqcgjd3v29",
-        "name": "Scholar Talk",
-        "description": "Membahas semua tentang scholarship dalam negeri dan luar negeri.",
-        "image": "https://loremflickr.com/1200/600/mountain",
-        "nik": "3646565633",
-        "no_rek": "3646565633"
+        "id": "ck9x3rs0v000004mqcn64htzc",
+        "user_id": "user_5opQ1KlXDFngrQRz1hIJ8WxB3MO",
+        "name": "Digital Marketing",
+        "description": "Channel untuk diskusi tentang strategi pemasaran digital.",
+        "image": "https://loremflickr.com/1200/600/marketing",
+        "nik": "3646565636",
+        "no_rek": "3646565636"
     },
     {
-        "id": "cm06h980g42309gingr8geraz",
+        "id": "ck9x4rs1v000005mqcn64htzd",
+        "user_id": "user_6qrS3MpYZHosoTRz2kKL9AyC4PQ",
+        "name": "AI Revolution",
+        "description": "Channel yang membahas perkembangan terbaru dalam AI.",
+        "image": "https://loremflickr.com/1200/600/ai",
+        "nik": "3646565637",
+        "no_rek": "3646565637"
+    },
+    {
+        "id": "ck9x5rs2v000006mqcn64htze",
         "user_id": "user_2kyN7GxSTQcjdJTq8vRG4RkzW8F",
-        "name": "Competitions",
-        "description": "Membahas semua tentang kompetisi.",
-        "image": "https://loremflickr.com/1200/600/mountain",
-        "nik": "3646565633",
-        "no_rek": "3646565633"
+        "name": "Cloud Computing",
+        "description": "Channel untuk berbagi pengetahuan tentang cloud computing.",
+        "image": "https://loremflickr.com/1200/600/cloud",
+        "nik": "3646565638",
+        "no_rek": "3646565638"
     },
     {
-        "id": "tk06h980g42309gingr9lrs2",
-        "user_id": "cm0ewsc200000bmd618okays2",
-        "name": "SiBinar Talk",
-        "description": "Membahas semua tentang seminar dan webinar.",
-        "image": "https://loremflickr.com/1200/600/mountain",
-        "nik": "3646565633",
-        "no_rek": "3646565633"
+        "id": "ck9x6rs3v000007mqcn64htzf",
+        "user_id": "user_3klL7HyUBVdnmKPz9jFD5SxZ1KX",
+        "name": "Cybersecurity",
+        "description": "Channel diskusi tentang keamanan dunia maya.",
+        "image": "https://loremflickr.com/1200/600/security",
+        "nik": "3646565639",
+        "no_rek": "3646565639"
     },
     {
-        "id": "ph06h940g42309gingrak47",
-        "user_id": "user_2kyN7GxSTQcjdJTq8vRG4RkzW8F",
-        "name": "Volunteering",
-        "description": "Membahas semua tentang volunteering.",
-        "image": "https://loremflickr.com/1200/600/mountain",
-        "nik": "3646565633",
-        "no_rek": "3646565633"
+        "id": "ck9x7rs4v000008mqcn64htzg",
+        "user_id": "user_4mnO9IjVWCemqLPz0gHY7UvA2KL",
+        "name": "Web Development",
+        "description": "Channel untuk belajar dan berbagi tentang pengembangan web.",
+        "image": "https://loremflickr.com/1200/600/webdev",
+        "nik": "3646565640",
+        "no_rek": "3646565640"
+    },
+    {
+        "id": "ck9x8rs5v000009mqcn64htzh",
+        "user_id": "user_5opQ1KlXDFngrQRz1hIJ8WxB3MO",
+        "name": "Data Science",
+        "description": "Channel untuk membahas ilmu data dan analisis.",
+        "image": "https://loremflickr.com/1200/600/datascience",
+        "nik": "3646565641",
+        "no_rek": "3646565641"
+    },
+    {
+        "id": "ck9x9rs6v000010mqcn64htzi",
+        "user_id": "user_6qrS3MpYZHosoTRz2kKL9AyC4PQ",
+        "name": "Startup Hub",
+        "description": "Channel diskusi untuk para pelaku startup.",
+        "image": "https://loremflickr.com/1200/600/startup",
+        "nik": "3646565642",
+        "no_rek": "3646565642"
     }
 ]
