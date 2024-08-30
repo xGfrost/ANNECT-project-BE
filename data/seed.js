@@ -15,22 +15,31 @@ const main = async () => {
 
     await prisma.user_events.deleteMany();
     console.log("Truncated table user_events...");
+
     await prisma.favorites.deleteMany();
     console.log("Truncated table favories...");
+
     await prisma.follows.deleteMany();
     console.log("Truncated table follows...");
-    await prisma.channels.deleteMany();
-    console.log("Truncated table channels...");
-    await prisma.categories.deleteMany();
-    console.log("Truncated table categories...");
-    await prisma.tags.deleteMany();
-    console.log("Truncated table tags...");
+
     await prisma.chats.deleteMany();
     console.log("Truncated table chats...");
+
     await prisma.events.deleteMany();
     console.log("Truncated table events...");
+
+    await prisma.channels.deleteMany();
+    console.log("Truncated table channels...");
+
+    await prisma.categories.deleteMany();
+    console.log("Truncated table categories...");
+
+    await prisma.tags.deleteMany();
+    console.log("Truncated table tags...");
+
     await prisma.users.deleteMany();
     console.log("Truncated table users...");
+
     console.log("Truncated all tables.");
 
     console.log("Seeding all tables");

@@ -1,25 +1,25 @@
 [
     {
         "id": "ck9x7vb7v000001mqabc123d",
-        "channel_id": "ck9wz8q7v000001mqcn64htz8",
+        "channel_id": "cm06h980g00009gingr8geaqz",
         "category_id": "ck9x1rp7v000001mqerfg8lck",
-        "tag_id": "ck9x3sl7v000001mqjc4pqvtg",
+        "tag_id": "ckz9t9m000004o9ha90thx3ad",
         "name": "Beasiswa Pandaro",
         "description": "Beasiswa S1 yang diberikan PT. Pandaro tbk.",
         "image": "https://loremflickr.com/200/200/abstract",
         "tf_image": "https://www.standardbank.co.za/static_file/SBG/Assets/Img/HelpCentre/payments/transactionsDtls_sendPop_successMessage_720X1280.png",
         "location": "Jakarta Convention Center",
-        "is_paid": 1,
+        "is_paid": true,
         "price": 500000,
         "status": "ONGOING",
         "link_group": "t.me/msib_batch_7",
-        "event_date": "2024-09-15 10:00:00",
-        "created_at": "2024-08-23 14:00:00.000",
-        "updated_at": "2024-08-23 14:00:00.000"
+        "event_date": "2024-09-15T10:00:00Z",
+        "created_at": "2024-08-23T14:00:00.000Z",
+        "updated_at": "2024-08-23T14:00:00.000Z"
     },
     {
         "id": "ck9x7vb7v000002mqxyz456e",
-        "channel_id": "ck9wz8q7v000002mqcpjq6gxm",
+        "channel_id": "cm06h980g42309gingr8geraz",
         "category_id": "ck9x1rp7v000002mqebdgw9xt",
         "tag_id": "ck9x3sl7v000002mqkvrjtybg",
         "name": "Esports Tournament 2024",
@@ -27,13 +27,13 @@
         "image": "https://loremflickr.com/200/200/abstract",
         "tf_image": "https://www.standardbank.co.za/static_file/SBG/Assets/Img/HelpCentre/payments/transactionsDtls_sendPop_successMessage_720X1280.png",
         "location": "Surabaya Convention Hall",
-        "is_paid": 1,
+        "is_paid": true,
         "price": 300000,
         "status": "PENDING",
         "link_group": "t.me/msib_batch_7",
-        "event_date": "2024-10-05 09:00:00",
-        "created_at": "2024-08-23 14:05:00.000",
-        "updated_at": "2024-08-23 14:05:00.000"
+        "event_date": "2024-10-05T09:00:00Z",
+        "created_at": "2024-08-23T14:05:00.000Z",
+        "updated_at": "2024-08-23T14:05:00.000Z"
     },
     {
         "id": "ck9x7vb7v000003mqfgh789f",
@@ -45,13 +45,13 @@
         "image": "https://loremflickr.com/200/200/abstract",
         "tf_image": "https://www.standardbank.co.za/static_file/SBG/Assets/Img/HelpCentre/payments/transactionsDtls_sendPop_successMessage_720X1280.png",
         "location": "Bali Retreat Center",
-        "is_paid": 0,
-        "price": null,
+        "is_paid": false,
+        "price": 300000,
         "status": "ONGOING",
         "link_group": "t.me/msib_batch_7",
-        "event_date": "2024-09-20 08:30:00",
-        "created_at": "2024-08-23 14:10:00.000",
-        "updated_at": "2024-08-23 14:10:00.000"
+        "event_date": "2024-09-20T08:30:00Z",
+        "created_at": "2024-08-23T14:10:00.000Z",
+        "updated_at": "2024-08-23T14:10:00.000Z"
     },
     {
         "id": "ck9x7vb7v000004mqijk321g",
@@ -63,13 +63,13 @@
         "image": "https://loremflickr.com/200/200/abstract",
         "tf_image": "https://www.standardbank.co.za/static_file/SBG/Assets/Img/HelpCentre/payments/transactionsDtls_sendPop_successMessage_720X1280.png",
         "location": "Bandung Convention Center",
-        "is_paid": 1,
+        "is_paid": true,
         "price": 750000,
         "status": "PENDING",
         "link_group": "t.me/msib_batch_7",
-        "event_date": "2024-11-12 09:00:00",
-        "created_at": "2024-08-23 14:15:00.000",
-        "updated_at": "2024-08-23 14:15:00.000"
+        "event_date": "2024-11-12T09:00:00Z",
+        "created_at": "2024-08-23T14:15:00.000Z",
+        "updated_at": "2024-08-23T14:15:00.000Z"
     },
     {
         "id": "ck9x7vb7v000005mqlmn654h",
@@ -81,13 +81,13 @@
         "image": "https://loremflickr.com/200/200/abstract",
         "tf_image": "https://www.standardbank.co.za/static_file/SBG/Assets/Img/HelpCentre/payments/transactionsDtls_sendPop_successMessage_720X1280.png",
         "location": "Yogyakarta Tech Hub",
-        "is_paid": 0,
-        "price": null,
+        "is_paid": false,
+        "price": 300000,
         "status": "DONE",
         "link_group": "t.me/msib_batch_7",
-        "event_date": "2024-08-01 14:00:00",
-        "created_at": "2024-08-23 14:20:00.000",
-        "updated_at": "2024-08-23 14:20:00.000"
+        "event_date": "2024-08-01T14:00:00Z",
+        "created_at": "2024-08-23T14:20:00.000Z",
+        "updated_at": "2024-08-23T14:20:00.000Z"
     },
     {
         "id": "ck9x7vb7v000006mqopq987i",
@@ -99,13 +99,13 @@
         "image": "https://loremflickr.com/200/200/abstract",
         "tf_image": "https://www.standardbank.co.za/static_file/SBG/Assets/Img/HelpCentre/payments/transactionsDtls_sendPop_successMessage_720X1280.png",
         "location": "Ubud Wellness Center",
-        "is_paid": 1,
+        "is_paid": true,
         "price": 400000,
         "status": "PENDING",
         "link_group": "t.me/msib_batch_7",
-        "event_date": "2024-12-01 07:00:00",
-        "created_at": "2024-08-23 14:25:00.000",
-        "updated_at": "2024-08-23 14:25:00.000"
+        "event_date": "2024-12-01T07:00:00Z",
+        "created_at": "2024-08-23T14:25:00.000Z",
+        "updated_at": "2024-08-23T14:25:00.000Z"
     },
     {
         "id": "ck9x7vb7v000007mqrtu543j",
@@ -117,13 +117,13 @@
         "image": "https://loremflickr.com/200/200/abstract",
         "tf_image": "https://www.standardbank.co.za/static_file/SBG/Assets/Img/HelpCentre/payments/transactionsDtls_sendPop_successMessage_720X1280.png",
         "location": "Jakarta Tech Park",
-        "is_paid": 1,
+        "is_paid": true,
         "price": 650000,
         "status": "ONGOING",
         "link_group": "t.me/msib_batch_7",
-        "event_date": "2024-09-25 10:00:00",
-        "created_at": "2024-08-23 14:30:00.000",
-        "updated_at": "2024-08-23 14:30:00.000"
+        "event_date": "2024-09-25T10:00:00Z",
+        "created_at": "2024-08-23T14:30:00.000Z",
+        "updated_at": "2024-08-23T14:30:00.000Z"
     },
     {
         "id": "ck9x7vb7v000008mqstu876k",
@@ -133,15 +133,15 @@
         "name": "Indie (Indonesian Indie) Game Fest",
         "description": "Rayakan indie game development dengan sesama enthusiasts.",
         "image": "https://loremflickr.com/200/200/abstract",
-        "tf_image": "indie_game_fest_tf.jpg",
+        "tf_image": "https://www.standardbank.co.za/static_file/SBG/Assets/Img/HelpCentre/payments/transactionsDtls_sendPop_successMessage_720X1280.png",
         "location": "Bali Indie Arena",
-        "is_paid": 1,
+        "is_paid": true,
         "price": 200000,
         "status": "DONE",
         "link_group": "t.me/msib_batch_7",
-        "event_date": "2024-07-15 09:00:00",
-        "created_at": "2024-08-23 14:35:00.000",
-        "updated_at": "2024-08-23 14:35:00.000"
+        "event_date": "2024-07-15T09:00:00Z",
+        "created_at": "2024-08-23T14:35:00.000Z",
+        "updated_at": "2024-08-23T14:35:00.000Z"
     },
     {
         "id": "ck9x7vb7v000009mquvw210l",
@@ -153,30 +153,30 @@
         "image": "https://loremflickr.com/200/200/abstract",
         "tf_image": "https://www.standardbank.co.za/static_file/SBG/Assets/Img/HelpCentre/payments/transactionsDtls_sendPop_successMessage_720X1280.png",
         "location": "Jakarta Culinary School",
-        "is_paid": 0,
-        "price": null,
+        "is_paid": false,
+        "price": 300000,
         "status": "PENDING",
         "link_group": "t.me/msib_batch_7",
-        "event_date": "2024-10-18 10:00:00",
-        "created_at": "2024-08-23 14:40:00.000",
-        "updated_at": "2024-08-23 14:40:00.000"
+        "event_date": "2024-10-18T10:00:00Z",
+        "created_at": "2024-08-23T14:40:00.000Z",
+        "updated_at": "2024-08-23T14:40:00.000Z"
     },
     {
         "id": "ck9x7vb7v000010mqxyz432m",
-        "channel_id": "ck9wz8q7v000001mqcn64htz8",
+        "channel_id": "tk06h980g42309gingr9lrs2",
         "category_id": "ck9x1rp7v000001mqerfg8lck",
-        "tag_id": "ck9x3sl7v000001mqjc4pqvtg",
+        "tag_id": "ckz9t9m000004o9ha90thx3ad",
         "name": "Seminar Nasional Tuak",
         "description": "Ikuti Seminar Tuak.",
         "image": "https://cdn.idntimes.com/content-images/post/20230104/pink-dots-birthday-photo-collage-11-22f1c4b92a3e6fd45afa14e6fdc7ab1e_600x400.png",
         "tf_image": "https://www.standardbank.co.za/static_file/SBG/Assets/Img/HelpCentre/payments/transactionsDtls_sendPop_successMessage_720X1280.png",
         "location": "Jakarta Blockchain Hub",
-        "is_paid": 1,
+        "is_paid": true,
         "price": 800000,
         "status": "ONGOING",
         "link_group": "t.me/msib_batch_7",
-        "event_date": "2024-10-22 09:30:00",
-        "created_at": "2024-08-23 14:45:00.000",
-        "updated_at": "2024-08-23 14:45:00.000"
+        "event_date": "2024-10-22T09:30:00Z",
+        "created_at": "2024-08-23T14:45:00.000Z",
+        "updated_at": "2024-08-23T14:45:00.000Z"
     }
 ]
