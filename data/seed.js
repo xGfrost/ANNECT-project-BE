@@ -22,6 +22,12 @@ const main = async () => {
     await prisma.follows.deleteMany();
     console.log("Truncated table follows...");
 
+    await prisma.chats.deleteMany();
+    console.log("Truncated table chats...");
+
+    await prisma.events.deleteMany();
+    console.log("Truncated table events...");
+
     await prisma.channels.deleteMany();
     console.log("Truncated table channels...");
 
@@ -30,12 +36,6 @@ const main = async () => {
 
     await prisma.tags.deleteMany();
     console.log("Truncated table tags...");
-
-    await prisma.chats.deleteMany();
-    console.log("Truncated table chats...");
-
-    await prisma.events.deleteMany();
-    console.log("Truncated table events...");
 
     await prisma.users.deleteMany();
     console.log("Truncated table users...");
