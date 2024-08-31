@@ -1,4 +1,4 @@
-const { Router, query } = require("express");
+const { Router } = require("express");
 const {
   getAllEvents,
   updateEvent,
