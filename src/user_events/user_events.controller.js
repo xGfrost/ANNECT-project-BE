@@ -14,8 +14,7 @@ router.get("/:user_id", async (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    const { user_id, event_id } = req.body;
-    await inserUserEvent(user_id, event_id);
+    await inserUserEvent(req.body);
     res.status(201).send("success");
   } catch (error) {
     res.status(400).send(error.message);
