@@ -12,6 +12,7 @@ router.get("/", async (req, res) => {
   try {
     // Ambil parameter query dari URL
     const name = req.query.name || null;
+    const user_id = req.query.user_id || null;
     const is_paid = req.query.is_paid ? req.query.is_paid === 'true' : undefined;
     const tags = req.query.tags ? req.query.tags.split(',') : [];
     const categories = req.query.categories ? req.query.categories.split(',') : [];
@@ -19,10 +20,11 @@ router.get("/", async (req, res) => {
     // Membuat objek filter berdasarkan parameter yang diterima
     const filter = {
       where: {},
-      include: {
+      include: { 
         channels:true,
         tags: tags.length > 0 ? { where: { id: { in: tags } } } : true,
         categories: categories.length > 0 ? { where: { id: { in: categories } } } : true,
+        favorites: true,
         user_events: {
           select: {
             users: true,
@@ -55,6 +57,17 @@ router.get("/", async (req, res) => {
 
     // Panggil fungsi repository dengan filter yang sudah dibangun
     const events = await getAllEvents(filter);
+
+    events.forEach((event) => {
+      event.is_favorite = false;
+      if (event.favorites.length > 0 && user_id != null) {
+          event.favorites.forEach((favorite) => {
+            if (favorite.user_id == user_id) {
+                event.is_favorite = true;
+            }
+          })
+      }
+    })
 
     res.send(events);
   } catch (error) {
