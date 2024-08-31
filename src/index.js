@@ -35,10 +35,10 @@ app.use('/api/users', upload.none(), usersController);
 
 app.use('/api/categories', upload.none(), categoriesController);
 app.use('/api/tags', upload.none(), tagsController);
-app.use('/api', upload.none(), followController);
-app.use('/api', upload.none(), favoriteController);
+app.use('/api', followController);
+app.use('/api', favoriteController);
 app.use('/api/events', upload.none(), eventController);
-app.use('/api/user_events', upload.none(), userEventController);
+app.use('/api/user_events', userEventController);
 
 app.use('/api/channels', upload.none(), cheannelsController);
 app.use('/api/dashboard', upload.none(), dashboardcontroller);
