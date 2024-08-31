@@ -1,9 +1,9 @@
 const { Router } = require("express");
-<<<<<<< HEAD
-const { getAllUserFavorites, deleteFavorite, createfavorite } = require("./favorites.service");
-=======
-const { getAllUserFavorites, deleteFavorite, insertUserFavorite } = require("./favorites.service");
->>>>>>> 7334fa49d2018e3a2924b185a1147bd479a797b0
+const {
+  getAllUserFavorites,
+  deleteFavorite,
+  insertUserFavorite,
+} = require("./favorites.service");
 const router = Router();
 
 router.get("/users/:user_id/follows", async (req, res) => {
@@ -38,6 +38,5 @@ router.post("/favorites/:favorite_id", async (req, res) => {
     res.status(400).send(error.message);
   }
 });
-
 
 module.exports = router;
