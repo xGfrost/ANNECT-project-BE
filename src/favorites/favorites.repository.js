@@ -13,7 +13,7 @@ const getAll = async (user_id) =>
 const insert = (favoriteData) => (
   prisma.favorites.create({
     data: {
-      favoriteData
+      ...favoriteData
     }
   })
 )
