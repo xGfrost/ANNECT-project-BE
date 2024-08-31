@@ -21,8 +21,8 @@ router.get("/", async (req, res) => {
       where: {},
       include: {
         channels:true,
-        tags: tags.length > 0 ? { where: { id: { in: tags } } } : false,
-        categories: categories.length > 0 ? { where: { id: { in: categories } } } : false,
+        tags: tags.length > 0 ? { where: { id: { in: tags } } } : true,
+        categories: categories.length > 0 ? { where: { id: { in: categories } } } : true,
         user_events: {
           select: {
             users: true,
