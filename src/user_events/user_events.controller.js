@@ -1,5 +1,6 @@
 const { getUserEventById, inserUserEvent } = require("./user_events.service");
 const { Router } = require("express");
+const upload = require('../middleware/multer');
 const router = Router();
 
 router.get("/:user_id", async (req, res) => {
@@ -12,7 +13,7 @@ router.get("/:user_id", async (req, res) => {
   }
 });
 
-router.post("/", async (req, res) => {
+router.post("/add", upload.single('image'), async (req, res) => {
   try {
     await inserUserEvent(req.body);
     res.status(201).send("success");
