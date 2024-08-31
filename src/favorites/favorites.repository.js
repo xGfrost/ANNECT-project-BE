@@ -10,6 +10,14 @@ const getAll = async (user_id) =>
     },
   });
 
+const insert = (favoriteData) => (
+  prisma.favorites.create({
+    data: {
+      ...favoriteData
+    }
+  })
+)
+
 const deleteById = (favorite_id) =>
   prisma.favorites.delete({
     where: {
@@ -20,4 +28,5 @@ const deleteById = (favorite_id) =>
 module.exports = {
   getAll,
   deleteById,
+  insert
 };

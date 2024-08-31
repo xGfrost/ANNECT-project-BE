@@ -8,6 +8,7 @@ const storage = multer.diskStorage({
     // console.log(file, req);
     const timestamp = new Date().getTime();
     const originalname = file.originalname;
+    req.body.image = `${timestamp}-${originalname}`;
 
     cb(null, `${timestamp}-${originalname}`);
   },

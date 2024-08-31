@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { getAllUserFavorites, deleteFavorite } = require("./favorites.service");
+const { getAllUserFavorites, deleteFavorite, insertUserFavorite } = require("./favorites.service");
 const router = Router();
 
 router.get("/users/:user_id/follows", async (req, res) => {
@@ -7,6 +7,17 @@ router.get("/users/:user_id/follows", async (req, res) => {
     const { user_id } = req;
     const userFavorites = await getAllUserFavorites(user_id);
     res.send(userFavorites);
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
+
+router.post("/favorites/add", async (req, res) => {
+  try {
+    await insertUserFavorite(req.body);
+    res.send({
+      message: "Success",
+    });
   } catch (error) {
     res.status(400).send(error.message);
   }
