@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { getAllUserFavorites, deleteFavorite } = require("./favorites.service");
+const { getAllUserFavorites, deleteFavorite, createfavorite } = require("./favorites.service");
 const router = Router();
 
 router.get("/users/:user_id/follows", async (req, res) => {
@@ -23,5 +23,6 @@ router.post("/favorites/:favorite_id", async (req, res) => {
     res.status(400).send(error.message);
   }
 });
+
 
 module.exports = router;

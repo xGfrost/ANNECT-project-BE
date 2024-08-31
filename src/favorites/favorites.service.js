@@ -1,5 +1,6 @@
-const { getAll, deleteById } = require("./favorites.repository");
+const { getAll, deleteById, insertfavorite } = require("./favorites.repository");
 const { getbyid } = require("../users/users.service");
+const { getbyid } = require("../channels/channels.service")
 
 const getAllUserFavorites = async (user_id) => {
   await getbyid(user_id); // Check if user exists

@@ -5,6 +5,7 @@ const {
   insertEvent,
   getEventDetail,
 } = require("./events.service");
+const { channels } = require("../db");
 const router = Router();
 
 router.get("/", async (req, res) => {
@@ -19,6 +20,7 @@ router.get("/", async (req, res) => {
     const filter = {
       where: {},
       include: {
+        channels:true,
         tags: tags.length > 0 ? { where: { id: { in: tags } } } : false,
         categories: categories.length > 0 ? { where: { id: { in: categories } } } : false,
         user_events: {

@@ -65,9 +65,10 @@ const insert = async (channelsdata) => {
             name:channelsdata.name,
             description:channelsdata.description,
             image:channelsdata.image,
-            no_rek: channelsdata.no_rek,
-            nik: channelsdata.nik,
-            ktp: channelsdata.ktp,
+            nik:channelsdata.nik,
+            no_rek:channelsdata.no_rek,
+            phone:channelsdata.phone,
+            status:channelsdata.status,
         }
     })
     return ch;
