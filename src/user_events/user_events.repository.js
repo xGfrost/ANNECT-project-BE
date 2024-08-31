@@ -24,7 +24,9 @@ const updateStatus = (user_event_id, updated_user_event_status) => (
 const insert = (user_event_data) => (
   prisma.user_events.create({
     data: {
-      user_event_data,
+      user_id: user_event_data.user_id,
+      event_id: user_event_data.event_id,
+      tf_image: user_event_data.image,
       status: false,
     }
   })
