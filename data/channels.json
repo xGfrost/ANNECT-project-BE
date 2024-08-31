@@ -48,5 +48,35 @@
         "nik": "3646565637",
         "no_rek": "3646565637",
         "phone": "00112233"
+    },
+    {
+        "id": "ck9x4rs1v000005mqcn69htzd",
+        "user_id": "user_6qrS3MpYZHosoTRz2kKL9AyC4PQ",
+        "name": "ComHaton",
+        "description": "Channel yang membahas kompetisi dan hackathon.",
+        "image": "https://loremflickr.com/1200/600/hackathon",
+        "nik": "3646565637",
+        "no_rek": "3646565637",
+        "phone": "00112233"
+    },
+    {
+        "id": "ck9x4rs1v666665mqcn69htzd",
+        "user_id": "user_5opQ1KlXDFngrQRz1hIJ8WxB3MO",
+        "name": "ScholarShipper",
+        "description": "Channel yang membahas info terbaru tentang beasiswa dalam negeri dan luar negeri.",
+        "image": "https://loremflickr.com/1200/600/scholarship",
+        "nik": "3646565637",
+        "no_rek": "3646565637",
+        "phone": "00112233"
+    },
+    {
+        "id": "ck9x4rs14587625mqcn69htzd",
+        "user_id": "user_4mnO9IjVWCemqLPz0gHY7UvA2KL",
+        "name": "SimpBinar",
+        "description": "Channel yang membahas info seminar, konferensi, dan webinar",
+        "image": "https://loremflickr.com/1200/600/conference",
+        "nik": "3646565637",
+        "no_rek": "3646565637",
+        "phone": "00112233"
     }
 ]
