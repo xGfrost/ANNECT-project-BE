@@ -15,6 +15,30 @@ const findall = async (name, user_id) => {
             users:true
         }
     });
+
+    // ch.forEach((channel) => {
+    //     channel.is_following = false;
+    //     if (channel.followers.length > 0 && user_id != null) {
+    //         channel.followers.forEach((follower) => {
+    //             if (follower.user_id == user_id) {
+    //                 channel.is_following = true;
+    //             }
+    //         });
+    //     }
+    // });
+    ch.forEach((channel) => {
+        channel.is_following = false;
+
+        // Cek apakah `followers` terdefinisi dan bukan null
+        if (channel.followers && channel.followers.length > 0 && user_id != null) {
+            channel.followers.forEach((follower) => {
+                if (follower.user_id == user_id) {
+                    channel.is_following = true;
+                }
+            });
+        }
+    });
+
     return ch;
 }
 
