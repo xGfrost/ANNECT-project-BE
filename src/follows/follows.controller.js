@@ -40,7 +40,7 @@ router.get("/channels/:id/followers", async (req, res) => {
   }
 });
 
-router.post("/follows", async (req, res) => {
+router.post("/channels/:id/follows", async (req, res) => {
   try {
     const followdata = req.body;
     const channelId = req.query.id;
