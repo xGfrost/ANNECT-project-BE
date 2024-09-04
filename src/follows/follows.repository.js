@@ -14,6 +14,11 @@ const prisma = require("../db");
 //     return follow;
 // }
 
+const findall = async () => {
+  const follow = prisma.follows.findMany();
+  return follow;
+}
+
 const findallusersfollowbyid = async (user_id) => {
   const follow = await prisma.follows.findMany({
     where: {
@@ -60,7 +65,7 @@ module.exports = {
   findallchannelfollowersbyid,
   insert,
   deleteid,
-  // findall,
+  findall,
 };
 
 // const channel = await prisma.channels.findUnique({
