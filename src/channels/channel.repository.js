@@ -12,7 +12,12 @@ const findall = async (name, user_id) => {
             }
         },
         include: {
-            users:true
+            users:true,
+            _count:{
+                select:{
+                  events:true
+                }
+              }
         }
     });
 
