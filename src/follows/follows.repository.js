@@ -14,10 +14,11 @@ const prisma = require("../db");
 //     return follow;
 // }
 
-const findall = async () => {
-  const follow = prisma.follows.findMany();
-  return follow;
-}
+// const findall = async () => {
+//   const follow = prisma.follows.findMany();
+//   return follow;
+// }
+
 
 const findallusersfollowbyid = async (user_id) => {
   const follow = await prisma.follows.findMany({
@@ -42,6 +43,16 @@ const findallchannelfollowersbyid = async (channel_id) => {
   return follow;
 };
 
+const exist = async (user_id, channel_id) => {
+  const follow = await prisma.follows.findFirst({
+    where:{
+      user_id:user_id,
+      channel_id: channel_id
+    }
+  })
+  return follow;
+}
+
 const insert = async (followdata) => {
   const fl = await prisma.follows.create({
     data: {
@@ -53,19 +64,30 @@ const insert = async (followdata) => {
 };
 
 const deleteid = async (id) => {
-  await prisma.follows.delete({
+  const follow = await prisma.follows.findUnique({
+    where: {
+      id: id, // Pastikan 'id' yang dikirim valid
+    },
+  });
+
+  if (!follow) {
+    throw new Error("Record to delete does not exist.");
+  }
+
+  return await prisma.follows.delete({
     where: {
       id: id,
     },
   });
 };
 
+
 module.exports = {
   findallusersfollowbyid,
   findallchannelfollowersbyid,
   insert,
   deleteid,
-  findall,
+  exist,
 };
 
 // const channel = await prisma.channels.findUnique({
