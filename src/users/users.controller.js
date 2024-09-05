@@ -1,5 +1,5 @@
 const express = require("express");
-const { getall, getbyid, totalusers } = require("./users.service");
+const { getall, getbyid, totalusers, getHistoryEvent } = require("./users.service");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
@@ -27,6 +27,16 @@ router.get("/total", async (req, res) => {
     res.send({
       totalusers: user,
     });
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+});
+
+router.get("/:id/event-histories", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const user = await getHistoryEvent(id);
+    res.send(user);
   } catch (error) {
     res.status(400).send(error.message);
   }

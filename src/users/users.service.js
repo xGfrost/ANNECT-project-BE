@@ -2,6 +2,7 @@ const {
   findallusers,
   finduserbyid,
   countallusers,
+  findHistoryEvent,
 } = require("./users.repeository");
 
 const getall = async () => {
@@ -17,7 +18,16 @@ const getbyid = async (id) => {
   return user;
 };
 
+const getHistoryEvent = async (id) => {
+  const user = await findHistoryEvent(id);
+  if (!user) {
+    throw new Error("id users not found");
+  }
+  return user;
+};
+
 module.exports = {
   getall,
   getbyid,
+  getHistoryEvent,
 };
