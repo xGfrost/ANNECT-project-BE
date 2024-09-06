@@ -10,7 +10,7 @@ const findall = async (name, user_id) => {
             name: {
                 contains: name
             },
-            status: 'VERIFIED'
+            status: "VERIFIED"
         },
         include: {
             users: true,
@@ -31,8 +31,8 @@ const findall = async (name, user_id) => {
         channel.is_following = false;
 
         
-        if (channel.followers && channel.followers.length > 0 && user_id != null) {
-            channel.followers.forEach((follower) => {
+        if (channel.follows && channel.follows.length > 0 && user_id != null) {
+            channel.follows.forEach((follower) => {
                 if (follower.user_id == user_id) {
                     channel.is_following = true;
                 }
@@ -43,25 +43,24 @@ const findall = async (name, user_id) => {
     return ch;
 };
 
-const findbyid = async (id) => {
+const findbyid = async (id, user_id) => {
     const ch = await prisma.channels.findUnique({
-        where:{
-            id:id,
+        where: {
+            id: id,
         },
-        include:{
-            users:true,
-            follows:true,
-            events:true,
-        }
-    })
+        include: {
+            users: true,
+            follows: true,
+            events: true,
+        },
+    });
 
     if (ch) {
         ch.is_following = false;
 
-        // Cek apakah `followers` terdefinisi dan bukan null
-        if (ch.followers && ch.followers.length > 0 && user_id != null) {
-            ch.followers.forEach((follower) => {
-                if (follower.user_id == user_id) {
+        if (ch.follows && ch.follows.length > 0 && user_id != null) {
+            ch.follows.forEach((follow) => {
+                if (follow.user_id == user_id) {
                     ch.is_following = true;
                 }
             });
@@ -69,7 +68,7 @@ const findbyid = async (id) => {
     }
     
     return ch;
-}
+};
 
 const findchannelbyiduser = async (user_id) => {
     const channel = await prisma.channels.findFirst({

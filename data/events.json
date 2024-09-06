@@ -112,7 +112,7 @@
         "location": "Bandung",
         "is_paid": false,
         "price": 0,
-        "status": "ONLINE",
+        "status": "DONE",
         "link_group": "t.me/beasiswakesehatan",
         "event_date": "2024-09-18T14:00:00Z",
         "created_at": "2024-08-25T11:00:00Z",

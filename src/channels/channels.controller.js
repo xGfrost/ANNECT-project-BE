@@ -37,6 +37,7 @@ router.get("/user/:user_id", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const id = req.params.id;
+    console.log(id);
     const ch = await getbyid(id);
     res.send(ch);
   } catch (error) {

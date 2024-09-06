@@ -27,7 +27,7 @@ const countall = async () => {
       users: true,
     },
     orderBy: {
-      created_at: "desc", // Mengurutkan berdasarkan kolom 'createdAt' secara descending
+      created_at: "desc",
     },
     take: 5,
   });
