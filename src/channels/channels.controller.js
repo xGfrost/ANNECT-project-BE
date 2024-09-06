@@ -34,11 +34,11 @@ router.get("/user/:user_id", async (req, res) => {
   }
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id/:user_id", async (req, res) => {
   try {
     const id = req.params.id;
-    console.log(id);
-    const ch = await getbyid(id);
+    const user_id = req.params.user_id
+    const ch = await getbyid(id, user_id);
     res.send(ch);
   } catch (error) {
     res.status(400).send(error.message);

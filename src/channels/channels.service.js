@@ -5,8 +5,8 @@ const getall = async (name, user_id) => {
     return ch;
 }
 
-const getbyid = async (id) => {
-    const ch = await findbyid(id);
+const getbyid = async (id, user_id) => {
+    const ch = await findbyid(id, user_id);
     if(!ch){
         throw new Error("channel id not found");
         

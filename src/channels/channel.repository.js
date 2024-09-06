@@ -50,25 +50,25 @@ const findbyid = async (id, user_id) => {
         },
         include: {
             users: true,
-            follows: true,
+            follows: true, // Pastikan ini meng-include relasi dengan tabel follows
             events: true,
         },
     });
 
     if (ch) {
+        // Set default value of is_following to false
         ch.is_following = false;
 
+        // Cek apakah user mengikuti channel
         if (ch.follows && ch.follows.length > 0 && user_id != null) {
-            ch.follows.forEach((follow) => {
-                if (follow.user_id == user_id) {
-                    ch.is_following = true;
-                }
-            });
+            // Menggunakan some() untuk mencari apakah user sudah follow channel
+            ch.is_following = ch.follows.some((follow) => follow.user_id === user_id);
         }
     }
     
     return ch;
 };
+
 
 const findchannelbyiduser = async (user_id) => {
     const channel = await prisma.channels.findFirst({
