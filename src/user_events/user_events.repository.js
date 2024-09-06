@@ -1,5 +1,15 @@
 const prisma = require("../db/index");
 
+const findall = async () => {
+  const ue = await prisma.user_events.findMany({
+    include:{
+      events:true,
+      users:true,
+    }
+  })
+  return ue;
+}
+
 const getById = (user_id) =>
   prisma.user_events.findMany({
     where: {
@@ -35,5 +45,6 @@ const insert = (user_event_data) => (
 module.exports = {
   getById,
   insert,
-  updateStatus
+  updateStatus,
+  findall,
 };
